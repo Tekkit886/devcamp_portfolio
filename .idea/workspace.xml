@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94f165aa-d5e7-47d0-b4cf-0e32525e3b41" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/DevcampPortfolio.iml" afterPath="$PROJECT_DIR$/.idea/DevcampPortfolio.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -427,7 +429,7 @@
       <workItem from="1500733734842" duration="704000" />
       <workItem from="1500734539019" duration="263000" />
       <workItem from="1500735384220" duration="76000" />
-      <workItem from="1500735477663" duration="1591000" />
+      <workItem from="1500735477663" duration="1685000" />
     </task>
     <task id="LOCAL-00001" summary="Changed readme file">
       <created>1500734033800</created>
@@ -440,7 +442,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2634000" />
+    <option name="totallyTimeSpent" value="2728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
