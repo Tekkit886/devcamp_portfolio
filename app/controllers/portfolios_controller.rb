@@ -21,11 +21,11 @@ class PortfoliosController < ApplicationController
   end
 
   def edit
-    @portfolio_item = Portfolio.find(parms[:id])
+    @portfolio_item = Portfolio.find(params[:id])
   end
 
   def update
-    @portfolio_item = Portfolio.find(parms[:id])
+    @portfolio_item = Portfolio.find(params[:id])
     respond_to do |format|
       if @portfolio_item.update(blog_params)
         format.html { redirect_to @portfolio_item, notice: 'Portfolio Item was successfully updated.' }
@@ -35,6 +35,10 @@ class PortfoliosController < ApplicationController
 
       end
     end
+  end
+
+  def show
+    @portfolio_item = Portfolio.find(params[:id])
   end
 
 end
