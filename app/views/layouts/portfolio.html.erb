@@ -4,7 +4,9 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <meta name="keywords" content="<%= @seo_keywords %>" />
+
+    <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -12,7 +14,7 @@
   		  <p class="notice"><%= notice %></p>
        	<p class="alert"><%= alert %></p>
 
-        <%= render "shared/nav", location: 'top' %>
+        <%= render "shared/nav", location: 'middle' %>
         
         <% if current_user.is_a?(User) %>
           <%= link_to "Logout", destroy_user_session_path, method: :delete %>
@@ -22,6 +24,8 @@
         <% end %>
 
     <%= yield %>
-    <%= source_helper ("application") %>
+
+        <%= source_helper ("portfolio") %>
+  
   </body>
 </html>

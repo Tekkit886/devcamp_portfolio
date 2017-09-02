@@ -1,5 +1,9 @@
 class PortfoliosController < ApplicationController
+<<<<<<< HEAD
   before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
+=======
+  layout 'portfolio'
+>>>>>>> 8656cbf9f195ac7f5aa009214f0cc30450ed5145
   def index
     @portfolio_items = Portfolio.all
   end
@@ -29,6 +33,7 @@ class PortfoliosController < ApplicationController
 
   def edit
     @portfolio_item = Portfolio.find(params[:id])
+    
   end
 
   def update
@@ -66,5 +71,5 @@ class PortfoliosController < ApplicationController
                                         :body, 
                                         technologies_attributes: [:name])
 
+  end
 end
-
