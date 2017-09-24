@@ -93,7 +93,6 @@ GEM
       mini_portile2 (~> 2.2.0)
     orm_adapter (0.5.0)
     pg (0.21.0)
-<<<<<<< HEAD
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -102,9 +101,7 @@ GEM
       byebug (>= 9.0, < 9.1)
       pry (~> 0.10)
     puma (3.9.1)
-=======
     puma (3.10.0)
->>>>>>> 8656cbf9f195ac7f5aa009214f0cc30450ed5145
     rack (2.0.3)
     rack-test (0.6.3)
       rack (>= 1.0)
