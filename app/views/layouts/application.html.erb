@@ -11,19 +11,27 @@
   </head>
 
   <body>
-  		  <p class="notice"><%= notice %></p>
-       	<p class="alert"><%= alert %></p>
 
-        <%= render "shared/nav", location: 'top' %>
+      <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+          <div class="cover-container">
+            <%= render "shared/application_nav" %>
         
-        <% if current_user.is_a?(User) %>
-          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-        <% else %>
-          <%= link_to "Register", new_user_registration_path %>
-          <%= link_to "Login", new_user_session_path %>
-        <% end %>
+            <% if current_user.is_a?(User) %>
+            <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+            <% else %>
+            <%= link_to "Register", new_user_registration_path %>
+            <%= link_to "Login", new_user_session_path %>
+            <% end %>
 
-    <%= yield %>
-    <%= source_helper ("application") %>
+            <%= yield %>
+            
+            <%= source_helper ("application") %>
+          </div>
+        </div>
+      </div>
+
   </body>
 </html>
