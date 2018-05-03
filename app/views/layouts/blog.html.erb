@@ -13,55 +13,34 @@
   <body>
 
       <!--Start of Nav-->
-  		  <div class="blog-masthead">
-        <div class="container">
-          <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">New features</a>
-            <a class="nav-link" href="#">Press</a>
-            <a class="nav-link" href="#">New hires</a>
-            <a class="nav-link" href="#">About</a>
-          </nav>
-        </div>
-      </div>
+  		  <%= render 'shared/blog_nav' %>
     <!--End of Nav-->
 
     <!-- start of blog header -->
       <div class="blog-header">
         <div class="container">
-          <h1 class="blog-title">The Bootstrap Blog</h1>
-          <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+          <h1 class="blog-title">Martin Mafia's Blog</h1>
+          <p class="lead blog-description">This Blog is obvisiously about me and random subjects. From Firefighting,
+          Software Development, Information Security, and Technology.</p>
+          <%= link_to 'Create New Blog', new_blog_path if logged_in?(:site_admin) %>
         </div>
       </div>
     <!-- End of blog header -->
 
-    <!-- start of container and row elements -->
+    
       <div class="container">
         <div class="row">
-    <!-- end of container and row elements -->
-
     
-
-
-        
-        
-          <!-- 
-              !!!!!!!!! KEEP IN I MIGHT HAVE MADE A MISTAKE SOMEWHERE!!!!!
-           <% if current_user.is_a?(User) %>
-          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-          <% else %>
-          <%= link_to "Register", new_user_registration_path %>
-          <%= link_to "Login", new_user_session_path %>
-          <% end %> -->
-
-          <%= login_helper %>
+          
           <%= yield %>
 
           <!-- start of sidebar -->
               <div class="col-sm-3 ml-sm-auto blog-sidebar">
                 <div class="sidebar-module sidebar-module-inset">
                 <h4>About</h4>
-                  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                  <p>Hi! My name is Brian. I am a full-time firefighter and software developer. As a firefighter, I work on a rescue
+                  company is the Charleston, SC Area. I am also part of SCTF1 in Communications. I have a deep passion for 
+                  technology, software development, and rescue.</p>
                 </div>
                  <div class="sidebar-module">
                     <h4>Archives</h4>
@@ -69,43 +48,31 @@
                         <li><a href="#">March 2014</a></li>
                         <li><a href="#">February 2014</a></li>
                         <li><a href="#">January 2014</a></li>
-                        <li><a href="#">December 2013</a></li>
-                        <li><a href="#">November 2013</a></li>
-                        <li><a href="#">October 2013</a></li>
-                        <li><a href="#">September 2013</a></li>
-                        <li><a href="#">August 2013</a></li>
-                        <li><a href="#">July 2013</a></li>
-                        <li><a href="#">June 2013</a></li>
-                        <li><a href="#">May 2013</a></li>
-                        <li><a href="#">April 2013</a></li>
                       </ol>
                   </div>
                     <div class="sidebar-module">
                       <h4>Elsewhere</h4>
                       <ol class="list-unstyled">
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
+                        <li><a href="https://github.com/Tekkit886">GitHub</a></li>
+                        <li><a href="https://twitter.com/TailboardTech">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/brian-martin-33761916/">LinkedIn</a></li>
                       </ol>
                     </div>
                 </div>
           <!-- end of sidebar -->
-
+              </div>
           <!-- start of footer -->
-             <footer class="blog-footer">
-              <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-                <p>
-                  <a href="#">Back to top</a>
-                </p>
-            </footer>
+             <footer class="bog-footer">
+              <p>This is the footer!</p>
+             </footer>
 
           <!-- end of footer -->
 
 
-          <%= render "shared/nav", location: 'bottom' %>
+         
 
           <%= source_helper ("blog") %>
-        </div>
+        
       </div>
        
   </body>

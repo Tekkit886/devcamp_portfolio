@@ -58,3 +58,4 @@ gem 'devise', '~> 4.4'
 gem 'bootstrap', '~> 4.0.0'
 
 gem 'tailboard_view_tool', git: 'https://github.com/Tekkit886/tailboard_view_tool'
+gem 'petergate', '~> 1.8', '>= 1.8.1'
