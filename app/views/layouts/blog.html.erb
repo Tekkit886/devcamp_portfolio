@@ -11,23 +11,69 @@
   </head>
 
   <body>
-  		  <p class="notice"><%= notice %></p>
-       	<p class="alert"><%= alert %></p>
 
+      <!--Start of Nav-->
+  		  <%= render 'shared/blog_nav' %>
+    <!--End of Nav-->
+
+    <!-- start of blog header -->
+      <div class="blog-header">
+        <div class="container">
+          <h1 class="blog-title">Martin Mafia's Blog</h1>
+          <p class="lead blog-description">This Blog is obvisiously about me and random subjects. From Firefighting,
+          Software Development, Information Security, and Technology.</p>
+          <%= link_to 'Create New Blog', new_blog_path if logged_in?(:site_admin) %>
+        </div>
+      </div>
+    <!-- End of blog header -->
+
+    
+      <div class="container">
+        <div class="row">
+    
+          
+          <%= yield %>
+
+          <!-- start of sidebar -->
+              <div class="col-sm-3 ml-sm-auto blog-sidebar">
+                <div class="sidebar-module sidebar-module-inset">
+                <h4>About</h4>
+                  <p>Hi! My name is Brian. I am a full-time firefighter and software developer. As a firefighter, I work on a rescue
+                  company is the Charleston, SC Area. I am also part of SCTF1 in Communications. I have a deep passion for 
+                  technology, software development, and rescue.</p>
+                </div>
+                 <div class="sidebar-module">
+                    <h4>Archives</h4>
+                      <ol class="list-unstyled">
+                        <li><a href="#">March 2014</a></li>
+                        <li><a href="#">February 2014</a></li>
+                        <li><a href="#">January 2014</a></li>
+                      </ol>
+                  </div>
+                    <div class="sidebar-module">
+                      <h4>Elsewhere</h4>
+                      <ol class="list-unstyled">
+                        <li><a href="https://github.com/Tekkit886">GitHub</a></li>
+                        <li><a href="https://twitter.com/TailboardTech">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/brian-martin-33761916/">LinkedIn</a></li>
+                      </ol>
+                    </div>
+                </div>
+          <!-- end of sidebar -->
+              </div>
+          <!-- start of footer -->
+             <footer class="bog-footer">
+              <p>This is the footer!</p>
+             </footer>
+
+          <!-- end of footer -->
+
+
+         
+
+          <%= source_helper ("blog") %>
         
-        
-        <% if current_user.is_a?(User) %>
-          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-        <% else %>
-          <%= link_to "Register", new_user_registration_path %>
-          <%= link_to "Login", new_user_session_path %>
-        <% end %>
-
-    <%= yield %>
-
-    <%= render "shared/nav", location: 'bottom' %>
-
-      <%= source_helper ("blog") %>
+      </div>
        
   </body>
 </html>
