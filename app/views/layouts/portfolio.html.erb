@@ -14,17 +14,11 @@
 
   <body>
       <%= render 'shared/portfolio_nav' %>
-      <%= render 'shared/portfolio_masthead' %>
-      
-
-    
-    <%= yield %>
-
+      <%= render 'shared/portfolio_masthead' unless logged_in?(:siteadmin) %>
+   
+      <%= yield %>
 
       <%= render 'shared/portfolio_footer' %>
-    
-
-        <%= source_helper ("portfolio") %>
-  
+      <%= source_helper ("portfolio") %>
   </body>
 </html>
