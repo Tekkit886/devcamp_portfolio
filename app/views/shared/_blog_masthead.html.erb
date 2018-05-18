@@ -1,0 +1,8 @@
+ <div class="blog-header">
+        <div class="container">
+          <h1 class="blog-title">Martin Mafia's Blog</h1>
+          <p class="lead blog-description">This Blog is obvisiously about me and random subjects. From Firefighting,
+          Software Development, Information Security, and Technology.</p>
+          <%= link_to 'Create New Blog', new_blog_path if logged_in?(:site_admin) %>
+        </div>
+      </div>
