@@ -9,7 +9,8 @@
   
   body {
 	font-family: Georgia, "Times New Roman", Times, serif;
-	color: #555;
+  color: #ecf0f1;
+  background-color: #2c3e50 !important;
   }
   
   h1,
@@ -26,7 +27,7 @@
   .h6 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 400;
-	color: #333;
+	color: #E8CE4D !important;
   }
   
   /*
@@ -41,7 +42,7 @@
    */
   .blog-masthead {
 	margin-bottom: 3rem;
-	background-color: #428bca;
+	background-color: transparent;
 	box-shadow: inset 0 -.1rem .25rem rgba(0, 0, 0, .1);
   }
   
@@ -50,7 +51,7 @@
 	position: relative;
 	padding: 1rem;
 	font-weight: 500;
-	color: #cdddeb;
+	color: #ecf0f1;
   }
   .nav-link:hover,
   .nav-link:focus {
@@ -87,11 +88,12 @@
   .blog-title {
 	margin-bottom: 0;
 	font-size: 2rem;
-	font-weight: 400;
+  font-weight: 400;
+  color: #E8CE4D;
   }
   .blog-description {
 	font-size: 1.1rem;
-	color: #999;
+	color: #2980b9;
   }
   
   @media (min-width: 40em) {
@@ -110,7 +112,7 @@
   }
   .sidebar-module-inset {
 	padding: 1rem;
-	background-color: #f5f5f5;
+	background-color: #e74c3c;
 	border-radius: .25rem;
   }
   .sidebar-module-inset p:last-child,
@@ -135,11 +137,16 @@
   }
   .blog-post-title {
 	margin-bottom: .25rem;
-	font-size: 2.5rem;
+  font-size: 2.5rem;
+  color: #E8CE4D;
   }
   .blog-post-meta {
 	margin-bottom: 1.25rem;
-	color: #999;
+	color: #3498db;
+  }
+
+  a {
+    color: #E8CE4D;
   }
   
   /*
