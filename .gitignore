@@ -21,3 +21,4 @@
 # I don't want to show my secrets
 /config/secrets.yml
 /images/me7.png
+/db/seeds.rb

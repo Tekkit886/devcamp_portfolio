@@ -1,8 +1,8 @@
 User.create!(
   email: "brian@test.com",
   name: "Admin",
-  password: "asdfasdf",
-  password_confirmation: "asdfasdf",
+  password: "951Btm886",
+  password_confirmation: "951Btm886",
   roles: "site_admin"
   )
 
