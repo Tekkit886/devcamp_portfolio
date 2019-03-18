@@ -22,3 +22,4 @@
 /config/secrets.yml
 /images/me7.png
 /db/seeds.rb
+.env
