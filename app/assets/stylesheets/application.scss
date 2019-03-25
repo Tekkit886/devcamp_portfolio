@@ -151,7 +151,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 .card-block {
@@ -178,4 +178,18 @@ body {
 
 h3, h2, h1 {
   color: #E8CE4D;
+}
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: blue;
+}
+
+.tech-news > .card {
+  color: blue;
+  padding: 30px;
 }
